@@ -1,0 +1,167 @@
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+#header {
+    background-color: honeydew;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+p.font {
+    font-size: 20px;
+    width: 70%;
+}
+
+li {
+    display: inline;
+    margin: 0.3em;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 400%;
+    font-style: oblique;
+    margin: 0px;
+}
+h2 {
+    font-size: 300%;
+    font-style: italic;
+}
+h3 {
+    color: blue;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: darkorange;
+}
+a:active {
+    color: white;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.bgColor {
+    background-color: lightblue;
+}
+
+.textM p {
+    color: green;
+    font-size: large;
+}
+.infoContent {
+    
+    justify-content: center;
+    align-items: center;
+}
+.premises, .collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.car-one {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-around; 
+    text-align: center;
+}
+
+.one {
+    background-color:rgb(151, 143, 143);
+    width: 15%;
+    margin: 0.2em;
+    padding: 0.2em;
+    color: black;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.sectionOne {
+    flex: 30%;
+    padding: 20px;
+}
+.sectionTwo {
+    flex: 70%;
+    padding: 20px;
+}
+.sectionsIn {
+    display: flex;
+    flex-wrap: wrap;
+}
+.category {
+    background-color:rgb(151, 143, 143);
+    width: 15%;
+    margin: 0.5em;
+    padding: 0.3em;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+        
+    .car-one {
+        width: 98%;
+    }
+    .type-one {
+        width: 95%;
+    }
+    .textM {
+        text-align: center;
+    
+    }
+    .one, .category {
+        flex: 100%;
+    }
+    .sections {
+        flex-direction: column;
+    }
+    p.font {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .car-one {
+        width: 48%;
+    }
+    .category {
+        flex: 20%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .car-one {
+        width: 22%;
+    }
+    
+}
+@media (min-width: 600px) {
+    .flexContainer {
+        flex-wrap: nowrap;
+    }
+}
